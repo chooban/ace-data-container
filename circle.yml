@@ -10,3 +10,7 @@ deployment:
       - docker build -t chooban/ace-data-container .
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
       - docker push chooban/ace-data-container:latest
+
+test:
+  override:
+    - echo "test"
